@@ -1,4 +1,4 @@
-package lap2;
+ package lap2;
 
 public class AgentProgram {
 
@@ -8,7 +8,11 @@ public class AgentProgram {
 		} else if (p.getAgentLocation() == Environment.LOCATION_A) {
 			return Environment.MOVE_RIGHT;
 		} else if (p.getAgentLocation() == Environment.LOCATION_B) {
-			return Environment.MOVE_LEFT;
+			return Environment.MOVE_DOWN;
+		} else if (p.getAgentLocation() == Environment.LOCATION_C) {
+			return Environment.MOVE_RIGHT;
+		} else if (p.getAgentLocation() == Environment.LOCATION_D) {
+			return Environment.MOVE_UP;
 		}
 		return NoOpAction.NO_OP;
  

@@ -21,9 +21,9 @@ public class Environment {
 	private boolean isDone = false;// all squares are CLEAN
 	private Agent agent = null;
 
-	public Environment(LocationState locAState, LocationState locBState) {
-		envState = new EnvironmentState(locAState, locBState);
-	}
+	public Environment(LocationState locAState, LocationState locBState, LocationState locCState ,LocationState locDState ) {
+		envState = new EnvironmentState(locAState, locBState, locCState,locDState);
+	} 
 
 	// add an agent into the enviroment
 	public void addAgent(Agent agent, String location) {
@@ -78,7 +78,9 @@ public class Environment {
 		System.out.println("Agent Loc.: " + agentLocation + "\tAction: " + anAction);
 
 		if ((es.getLocationState(LOCATION_A) == LocationState.CLEAN)
-				&& (es.getLocationState(LOCATION_B) == LocationState.CLEAN))
+				&& (es.getLocationState(LOCATION_B) == LocationState.CLEAN)
+				&& (es.getLocationState(LOCATION_C) == LocationState.CLEAN)
+				&& (es.getLocationState(LOCATION_D) == LocationState.CLEAN)	) 
 			isDone = true;// if both squares are clean, then agent do not need to do any action
 		es.display();
 	}
