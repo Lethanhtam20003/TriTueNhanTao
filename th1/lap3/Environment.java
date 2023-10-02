@@ -1,4 +1,4 @@
-package lap2;
+package lap3;
 
 public class Environment {
 	public static final Action MOVE_LEFT = new DynamicAction("LEFT");
@@ -43,12 +43,8 @@ public class Environment {
 		if (action == SUCK_DIRT) {
 			if (envState.getAgentLocation() == Environment.LOCATION_A) {
 				envState.setLocationState(LOCATION_A, Environment.LocationState.CLEAN);
-			} else if(envState.getAgentLocation()== Environment.LOCATION_B){
+			} else {
 				envState.setLocationState(LOCATION_B, Environment.LocationState.CLEAN);
-			} else  if(envState.getAgentLocation()== Environment.LOCATION_C){
-				envState.setLocationState(LOCATION_C, Environment.LocationState.CLEAN);
-			} else  if(envState.getAgentLocation()== Environment.LOCATION_D){
-				envState.setLocationState(LOCATION_D, Environment.LocationState.CLEAN);
 			}
 		}
 		if (action == MOVE_LEFT) {
