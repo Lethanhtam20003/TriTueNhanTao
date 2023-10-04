@@ -51,11 +51,16 @@ public class Environment {
 				envState.setLocationState(LOCATION_D, Environment.LocationState.CLEAN);
 			}
 		}
-		if (action == MOVE_LEFT) {
-			envState.setAgentLocation(LOCATION_A);
-		} else {
+		if (action == MOVE_LEFT) { 
+			envState.setAgentLocation(LOCATION_D);
+		} else if (action == MOVE_RIGHT){
 			envState.setAgentLocation(LOCATION_B);
+		}else if (action == MOVE_DOWN){
+			envState.setAgentLocation(LOCATION_C);
+		}else if (action == MOVE_UP){
+			envState.setAgentLocation(LOCATION_A);
 		}
+		
 
 		return envState;
 	}

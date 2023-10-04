@@ -10,7 +10,7 @@ public class AgentProgram {
 		} else if (p.getAgentLocation() == Environment.LOCATION_B) {
 			return Environment.MOVE_DOWN;
 		} else if (p.getAgentLocation() == Environment.LOCATION_C) {
-			return Environment.MOVE_RIGHT;
+			return Environment.MOVE_LEFT;
 		} else if (p.getAgentLocation() == Environment.LOCATION_D) {
 			return Environment.MOVE_UP;
 		}
