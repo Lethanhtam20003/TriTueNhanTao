@@ -1,4 +1,4 @@
-package task1;
+package task4_UniformCost;
 
 import java.util.ArrayList;
 import java.util.List;

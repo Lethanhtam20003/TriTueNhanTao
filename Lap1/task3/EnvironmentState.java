@@ -25,7 +25,7 @@ public class EnvironmentState {
 	}
 
 	public task3.Environment.LocationState getLocationState(String location) {
-		return this.states.get(location);
+		return null;
 	}
 
 	public void setLocationState(int i,int j , task3.Environment.LocationState clean) {

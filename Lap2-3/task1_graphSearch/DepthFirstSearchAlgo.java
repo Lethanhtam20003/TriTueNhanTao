@@ -1,20 +1,21 @@
-package task1;
+package task1_graphSearch;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
+import java.util.Stack;
 
-public class BreadthFirstSearchAlgo implements ISearchAlgo {
+public class DepthFirstSearchAlgo implements ISearchAlgo{
 
 	@Override
 	public Node execute(Node root, String goal) {
 		// TODO Auto-generated method stub
-		Queue<Node> frontier = new LinkedList<>();
+		Stack<Node> frontier = new Stack<>();
 		frontier.add(root);
 		List<Node> explored = new ArrayList<>();
 		while (!frontier.isEmpty()) {
-			Node current = frontier.poll();
+			Node current = frontier.pop();
 			if (current.getLabel().equals(goal)) {
 				return current;
 			}
@@ -32,13 +33,12 @@ public class BreadthFirstSearchAlgo implements ISearchAlgo {
 
 	@Override
 	public Node execute(Node root, String start, String goal) {
-		// TODO Auto-generated method stub
-		Queue<Node> frontier = new LinkedList<>();
+		Stack<Node> frontier = new Stack<>();
 		boolean started = false;
 		frontier.add(root);
 		List<Node> explored = new ArrayList<>();
 		while (!frontier.isEmpty()) {
-			Node current = frontier.poll();
+			Node current = frontier.pop();
 			if (current.getLabel().equals(start)) {
 				started = true;
 				frontier.clear();
@@ -60,4 +60,5 @@ public class BreadthFirstSearchAlgo implements ISearchAlgo {
 		}
 		return null;
 	}
+
 }

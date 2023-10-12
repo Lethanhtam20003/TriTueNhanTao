@@ -1,4 +1,4 @@
-package task1;
+package task4_UniformCost;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -31,23 +31,16 @@ public class NodeUtils {
 		Node nodeF = new Node("F");
 		Node nodeG = new Node("G");
 		Node nodeH = new Node("H");
-		nodeS.addEdge(nodeA, 5);
 		nodeS.addEdge(nodeB, 2);
 		nodeS.addEdge(nodeC, 4);
 		nodeA.addEdge(nodeD, 9);
+		nodeS.addEdge(nodeA, 5);
 		nodeA.addEdge(nodeE, 4);
 		nodeB.addEdge(nodeG, 6);
 		nodeC.addEdge(nodeF, 2);
 		nodeD.addEdge(nodeH, 7);
 		nodeE.addEdge(nodeG, 6);
 		nodeF.addEdge(nodeG, 1);
-		ISearchAlgo algo1 = new BreadthFirstSearchAlgo();
-		ISearchAlgo algo2 = new BreadthFirstSearchAlgo();
-		
-		Node result = algo1.execute(nodeS, "G");
-		System.out.println( printPath(result));
-		
-		Node result2 = algo2.execute(nodeS,"A" ,"G");
-		System.out.println( printPath(result2));
+
 	}
 }

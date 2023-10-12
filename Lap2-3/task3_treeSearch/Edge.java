@@ -1,4 +1,4 @@
-package task1;
+package task3_treeSearch;
 
 public class Edge implements Comparable<Edge>{
 	private Node begin;
