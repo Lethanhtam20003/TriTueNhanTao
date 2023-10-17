@@ -43,6 +43,7 @@ public class NodeUtils {
 		nodeF.addEdge(nodeG, 1);
 		ISearchAlgo algo1 = new BreadthFirstSearchAlgo();
 		ISearchAlgo algo2 = new BreadthFirstSearchAlgo();
+		
 		ISearchAlgo algo3 = new DepthFirstSearchAlgo();
 		ISearchAlgo algo4 = new DepthFirstSearchAlgo();
 

@@ -42,5 +42,9 @@ public class NodeUtils {
 		nodeE.addEdge(nodeG, 6);
 		nodeF.addEdge(nodeG, 1);
 
+		ISearchAlgo s = new UniformCostAlgo();
+		Node result = s.execute(nodeS, "G");
+		System.out.println(printPath(result));
+
 	}
 }

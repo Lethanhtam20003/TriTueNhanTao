@@ -1,4 +1,4 @@
- package task1_graphSearch;
+package task6;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -41,24 +41,10 @@ public class NodeUtils {
 		nodeD.addEdge(nodeH, 7);
 		nodeE.addEdge(nodeG, 6);
 		nodeF.addEdge(nodeG, 1);
-		ISearchAlgo algo1 = new BreadthFirstSearchAlgo();
-		ISearchAlgo algo2 = new BreadthFirstSearchAlgo();
-		
-		ISearchAlgo algo3 = new DepthFirstSearchAlgo();
-		ISearchAlgo algo4 = new DepthFirstSearchAlgo();
 
-		
-		Node result = algo1.execute(nodeS, "G");
-		System.out.println( printPath(result));
-		
-		Node result2 = algo2.execute(nodeS,"A" ,"G");
-		System.out.println( printPath(result2));
-		
-		Node result3 = algo3.execute(nodeS, "G");
-		System.out.println( printPath(result3));
-		
-		Node result4 = algo4.execute(nodeS,"C" ,"G");
-		System.out.println( printPath(result4));
-		
+		Depth_limited s = new Depth_limited();
+		Node result = s.execute(nodeS, "G",3 );
+		System.out.println(printPath(result));
+
 	}
 }
