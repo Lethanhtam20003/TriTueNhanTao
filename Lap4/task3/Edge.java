@@ -1,5 +1,6 @@
 package task3;
 
+
 public class Edge {
 	private Node begin;
 	private Node end;
