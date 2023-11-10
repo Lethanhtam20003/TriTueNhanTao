@@ -2,6 +2,7 @@ package task1;
 
 import java.util.Comparator;
 
+
 public class PuzzleUtils {
 
 	// distance between P1(x1, y1) and P2(x2, y2)

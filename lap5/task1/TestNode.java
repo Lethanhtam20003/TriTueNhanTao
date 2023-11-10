@@ -1,5 +1,6 @@
 package task1;
 
+
 public class TestNode {
 
 	public static void main(String[] args) {

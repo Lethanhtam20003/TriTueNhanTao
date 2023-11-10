@@ -5,5 +5,6 @@
 	<classpathentry kind="src" path="Lap2-3"/>
 	<classpathentry kind="src" path="Lap4"/>
 	<classpathentry kind="src" path="lap5"/>
+	<classpathentry kind="src" path="lap6"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
