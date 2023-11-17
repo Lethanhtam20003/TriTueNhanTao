@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+
 public class Puzzle {
 	public static final int MAX_ROW = 3;// 3x3: Dimension of the puzzle map
 	public static final int MAX_COL = 3;

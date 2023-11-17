@@ -2,7 +2,6 @@ package task1;
 
 import java.util.Arrays;
 
-
 public class Node {
 	private int[][] state;
 	private int h;
